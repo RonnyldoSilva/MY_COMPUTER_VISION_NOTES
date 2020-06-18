@@ -6,4 +6,6 @@ Install the requeriments to run on Ubuntu 18.04:
 ```
 wget https://bootstrap.pypa.io/get-pip.py
 sudo python3 get-pip.py
+
+sudo pip install opencv-contrib-python
 ```
