@@ -16,3 +16,13 @@ pip3 install imutils
 ```
 
 Try to import `cv2, pytesseract, imutils`:
+```python
+$ python
+Python 3.6.5 (default, Apr  1 2018, 05:46:30) 
+[GCC 7.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import cv2
+>>> import pytesseract
+>>> import imutils
+>>>
+```
