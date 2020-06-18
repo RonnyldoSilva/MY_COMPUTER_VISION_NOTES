@@ -26,3 +26,8 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> import imutils
 >>>
 ```
+
+Test:
+```
+python3 ocr.py img_phone/6.jpg
+```
