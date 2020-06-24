@@ -91,12 +91,36 @@ cv2.waitKey(0)
 ```
 
 ## Smoothing Images
-
 ```python
 # apply a Gaussian blur with a 11x11 kernel to the image to smooth it,
 # useful when reducing high frequency noise
 blurred = cv2.GaussianBlur(image, (11, 11), 0)
 cv2.imshow("Blurred", blurred)
+cv2.waitKey(0)
+```
+
+## Drawing on an image
+
+    img
+     : The destination image to draw upon. We’re drawing on output
+     .
+    pt1
+     : Our starting pixel coordinate which is the top-left. In our case, the top-left is (320, 60)
+     .
+    pt2
+     : The ending pixel — bottom-right. The bottom-right pixel is located at (420, 160)
+     .
+    color
+     : BGR tuple. To represent red, I’ve supplied (0 , 0, 255)
+     .
+    thickness
+     : Line thickness (a negative value will make a solid rectangle). I’ve supplied a thickness of 2
+     .
+```python
+# draw a 2px thick red rectangle surrounding the face
+output = image.copy()
+cv2.rectangle(output, (320, 60), (420, 160), (0, 0, 255), 2)
+cv2.imshow("Rectangle", output)
 cv2.waitKey(0)
 ```
 
