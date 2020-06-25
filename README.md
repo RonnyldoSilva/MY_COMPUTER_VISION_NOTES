@@ -131,7 +131,6 @@ cv2.putText(output, "OpenCV + Jurassic Park!!!", (10, 25),
 ```
 
 ## Arguments Parser
-
 ```python
 # import the necessary packages
 import argparse
@@ -144,3 +143,10 @@ ap.add_argument("-i", "--image", required=True,
 	help="path to input image")
 args = vars(ap.parse_args())
 ```
+
+## Converting an image to grayscale
+```python
+image = cv2.imread(args["image"])
+gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+```
+
