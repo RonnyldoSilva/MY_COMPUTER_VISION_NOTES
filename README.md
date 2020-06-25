@@ -150,3 +150,28 @@ image = cv2.imread(args["image"])
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 ```
 
+## Edge detection
+
+    img
+     : The gray
+      image.
+    minVal
+     : A minimum threshold, in our case 30
+     .
+    maxVal
+     : The maximum threshold which is 150
+      in our example.
+    aperture_size
+     : The Sobel kernel size. By default this value is 3
+      and hence is not shown on Line 25.
+
+```python
+edged = cv2.Canny(gray, 30, 150)
+```
+
+## Thresholding
+
+```python
+thresh = cv2.threshold(gray, 225, 255, cv2.THRESH_BINARY_INV)[1]
+```
+
