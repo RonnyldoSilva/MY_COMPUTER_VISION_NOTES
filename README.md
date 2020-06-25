@@ -198,3 +198,6 @@ cv2.putText(output, text, (10, 25),  cv2.FONT_HERSHEY_SIMPLEX, 0.7,
 cv2.imshow("Contours", output)
 cv2.waitKey(0)
 ```
+
+## Erosions and dilations
+
