@@ -129,3 +129,18 @@ output = image.copy()
 cv2.putText(output, "OpenCV + Jurassic Park!!!", (10, 25), 
 	cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
 ```
+
+## Arguments Parser
+
+```python
+# import the necessary packages
+import argparse
+import imutils
+import cv2
+
+# construct the argument parser and parse the arguments
+ap = argparse.ArgumentParser()
+ap.add_argument("-i", "--image", required=True,
+	help="path to input image")
+args = vars(ap.parse_args())
+```
