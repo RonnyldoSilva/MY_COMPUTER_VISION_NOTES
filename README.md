@@ -200,4 +200,3 @@ cv2.waitKey(0)
 ```
 
 ## Erosions and dilations
-
